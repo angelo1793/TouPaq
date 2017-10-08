@@ -31,7 +31,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,6 +52,7 @@
         app:layout_constraintVertical_bias="0.694"
         app:layout_constraintHorizontal_bias="0.175" />
     <ImageButton
+        android:id="@+id/btn_destino"
         android:src="@drawable/icon_destino"
         android:background="@color/primary_light"
         android:layout_width="100dp"
@@ -79,6 +82,7 @@
         app:layout_constraintVertical_bias="0.694"
         app:layout_constraintHorizontal_bias="0.834" />
     <ImageButton
+        android:id="@+id/btn_estadistica"
         android:src="@drawable/icon_estadisticas"
         android:background="@color/primary_light"
         android:layout_width="100dp"
@@ -91,23 +95,25 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.774" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PAQUETES"
-        android:textSize="20dp"
         android:textColor="@color/primary_text"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        app:layout_constraintVertical_bias="0.41"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintVertical_bias="0.41"
-        app:layout_constraintHorizontal_bias="0.501" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
     <ImageButton
+        android:id="@+id/btn_paquete"
         android:src="@drawable/icon_boletos"
         android:background="@color/primary_light"
         android:layout_width="100dp"
