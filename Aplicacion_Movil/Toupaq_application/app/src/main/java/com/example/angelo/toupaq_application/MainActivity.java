@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
     int btn=v.getId();
         Intent intentD= new Intent(this,Destinos.class);
+        Intent intentP= new Intent(this,Paquetes.class);
     switch (btn){
         case R.id.btn_destino:
             startActivity(intentD);break;
         case R.id.btn_estadistica:
             Toast.makeText(this, "Boton Estadistica", Toast.LENGTH_SHORT).show();break;
         case R.id.btn_paquete:
-            Toast.makeText(this, "Boton Paquete", Toast.LENGTH_SHORT).show();break;
+          startActivity(intentP);break;
     }
 
     }

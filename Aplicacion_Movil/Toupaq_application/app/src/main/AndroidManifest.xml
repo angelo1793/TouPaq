@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Destinos"></activity>
+        <activity android:name=".Paquetes"></activity>
     </application>
 
 </manifest>
