@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
@@ -52,14 +52,12 @@
         android:text="Menu"
 
 
-        android:layout_marginEnd="53dp"
-
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/imageView3"
-        android:layout_marginTop="9dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:layout_marginRight="53dp" />
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
     <ImageView
         android:layout_width="90dp"
         android:layout_height="88dp"
@@ -82,7 +80,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="9dp"
         android:gravity="fill_horizontal"
-        android:text="Paquetes"
+        android:text="Paquete ..."
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2paq"
         app:layout_constraintHorizontal_bias="0.304"
@@ -95,100 +93,119 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="9dp"
-        android:visibility="visible"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintLeft_toLeftOf="@+id/spinner2"
-        app:layout_constraintRight_toRightOf="@+id/spinner2"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CIUDAD"
-        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="41dp"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="118dp"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="376dp"
+        android:text="FECHA DE VUELTA:        7/10/17"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PRECIO"
-        tools:layout_constraintTop_creator="1"
+        android:text="PRECIO:                         S/.1200"
+        app:layout_constraintRight_toLeftOf="@+id/textView8"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintRight_toRightOf="@+id/textView2"
-        android:layout_marginTop="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="61dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0" />
+
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUSCAR"
-        tools:layout_constraintTop_creator="1"
+        android:text="RESERVAR"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/button"
-        android:layout_marginTop="63dp"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/button" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SELECCIONAR"
+        android:text="FECHA IDA:                      5/10/17"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/listPaquetes"
-        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="26dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2" />
 
-    <ListView
-        android:id="@+id/listPaquetes"
+    <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="0dp"
-        android:layout_height="223dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/primary_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/logo_ias"
+        app:layout_constraintRight_toLeftOf="@+id/textView8"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.516"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMPRESA 1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="61dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2paq" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="Descripcion de la empresa, sea hoteles, vuelos etc"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="@+id/textView3"
+        android:layout_marginTop="64dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/hoteles_destinia"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="82dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintLeft_toRightOf="@+id/textView3" />
 
 </android.support.constraint.ConstraintLayout>

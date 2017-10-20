@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".Destinos"></activity>
         <activity android:name=".Paquetes"></activity>
+        <activity android:name=".Detalle_paquetes"></activity>
+        <activity android:name=".confirmar_reserva"></activity>
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>
