@@ -6,6 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.angelo.toupaq_application.Destinos">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CIUDAD"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -18,17 +34,62 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="1dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
     <ImageView
         android:background="@color/blanco"
-        android:layout_width="768dp"
-        android:layout_height="579dp"
+        android:layout_width="383dp"
+        android:layout_height="474dp"
         tools:layout_constraintTop_creator="1"
         app:layout_constraintTop_toBottomOf="@+id/view"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/view"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="-6dp" />
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteY="89dp" />
+    <Button
+        android:text="MENU"
+        android:background="@color/divider"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/button2" />
+
+    <EditText
+        android:id="@+id/input_destino"
+        android:hint="Ingrese destino"
+        android:layout_width="253dp"
+        android:layout_height="46dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/listDestinos"
+        android:layout_marginStart="6dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/listDestinos"
+        android:layout_marginLeft="6dp" />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/blanco"
+        android:src="@drawable/icon_busqueda"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/listDestinos"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginBottom="-182dp" />
 
     <View
         android:layout_width="0dp"
@@ -52,16 +113,15 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="0dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.129"
         android:id="@+id/imageView2" />
     <TextView
-        android:layout_width="188dp"
-        android:layout_height="67dp"
-        android:text="Viajes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Destinos"
         android:textSize="50dp"
         android:gravity="fill_horizontal"
         tools:layout_constraintTop_creator="1"
@@ -69,24 +129,24 @@
         tools:layout_constraintBottom_creator="1"
         android:layout_marginStart="9dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        android:layout_marginEnd="14dp"
+        android:layout_marginEnd="21dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="10dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintLeft_toRightOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         android:id="@+id/textView" />
 
     <ListView
         android:id="@+id/listDestinos"
-        android:layout_width="314dp"
+        android:layout_width="0dp"
         android:layout_height="357dp"
         android:layout_marginBottom="28dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginStart="27dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="30dp"
         android:background="@color/primary_light"
         app:layout_constraintBottom_toBottomOf="parent"
