@@ -20,6 +20,7 @@ public class Paquetes extends   AppCompatActivity implements View.OnClickListene
     TextView etext1;
     TextView etext2;
     Button  btnmenu;
+    Button btnselec;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,8 @@ public class Paquetes extends   AppCompatActivity implements View.OnClickListene
         spinnerp=(Spinner)findViewById(R.id.spinner);
         btnmenu=(Button)  findViewById(R.id.button);
         btnmenu.setOnClickListener( this);
+        btnselec=(Button)  findViewById(R.id.button3);
+        btnselec.setOnClickListener( this);
         ListView lista;
         ArrayList<String> paquetes;
         ArrayAdapter<String> adaptador;
@@ -88,10 +91,15 @@ public class Paquetes extends   AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         int btn=v.getId();
         Intent intentM= new Intent(this,MainActivity.class);
+        Intent intentDP= new Intent(this,Detalle_paquetes.class);
 
         switch (btn){
             case R.id.button:
                 startActivity(intentM);break;
+
+            case R.id.button3:
+                startActivity(intentDP);break;
+
 
         }
 
