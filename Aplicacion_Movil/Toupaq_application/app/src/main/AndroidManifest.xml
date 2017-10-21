@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Destinos"></activity>
-        <activity android:name=".Paquetes"></activity>
+        <activity android:name=".Destinos" />
+        <activity android:name=".Paquetes" />
+        <activity android:name=".Destinos_detalles"></activity>
     </application>
 
 </manifest>
