@@ -23,7 +23,9 @@
         <activity android:name=".Login"></activity>
         <activity android:name=".Registro"></activity>
         <activity android:name=".Detares"></activity>
-        <activity android:name=".Mensaje_reserva"></activity>
+        <activity android:name=".Mensaje_reserva"/>
+
+
     </application>
 
 </manifest>
