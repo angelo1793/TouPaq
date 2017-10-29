@@ -13,6 +13,7 @@ import android.widget.Button;
 public class Detalle_paquetes extends AppCompatActivity implements View.OnClickListener{
     Button btnmenu;
     Button btnreservar;
+    Button btnfotos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,8 @@ public class Detalle_paquetes extends AppCompatActivity implements View.OnClickL
     btnmenu.setOnClickListener( this);
     btnreservar=(Button) findViewById(R.id.button);
     btnreservar.setOnClickListener(this);
-
+        btnfotos=(Button) findViewById(R.id.buttonfot);
+        btnfotos.setOnClickListener(this);
 
 
     }
@@ -35,7 +37,7 @@ public class Detalle_paquetes extends AppCompatActivity implements View.OnClickL
         int btn=v.getId();
         Intent intentM= new Intent(this,MainActivity.class);
         Intent intentR= new Intent(this,confirmar_reserva.class);
-
+        Intent intentF= new Intent(this,fotos.class);
         switch (btn){
 
             case R.id.button2:
@@ -44,6 +46,8 @@ public class Detalle_paquetes extends AppCompatActivity implements View.OnClickL
             case R.id.button:
                 startActivity(intentM); break;
 
+            case R.id.buttonfot:
+                startActivity(intentF); break;
             
         }
 

@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class Login extends AppCompatActivity implements  View.OnClickListener {
     Button btningresar;
-    Button btnregistrar;
+
 
     @Override
     public void onCreate(Bundle saveInstanceState) {
@@ -23,8 +23,7 @@ public class Login extends AppCompatActivity implements  View.OnClickListener {
         btningresar=(Button) findViewById(R.id.btnin);
         btningresar.setOnClickListener(this);
 
-        btnregistrar=(Button) findViewById(R.id.btconfirmar);
-        btnregistrar.setOnClickListener(this);
+
 
     }
 
@@ -32,15 +31,18 @@ public class Login extends AppCompatActivity implements  View.OnClickListener {
     public void onClick(View v) {
         int btn= v.getId();
         Intent intentIn= new Intent(this,Detares.class);
-        Intent intentR= new Intent(this,Registro.class);
+
 
         switch (btn){
             case R.id.btnin:
                 startActivity(intentIn);break;
 
-            case R.id.btconfirmar:
-                startActivity((intentR));break;
+
         }
+    }
+
+    public  void  goCreateAccount(View view){
+
     }
 }
 

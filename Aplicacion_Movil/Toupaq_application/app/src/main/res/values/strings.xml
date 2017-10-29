@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">Toupaq_application</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="hint_username1">Nombre usuario</string>
+    <string name="hint_password1">Contraseña</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_button_login">Login</string>
+    <string name="dont_have_account">¿No tienes cuenta?,</string>
+    <string name="create_here">crea una aqui</string>
+    <string name="hint_dni">DNI</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password_create">Contraseña</string>
+    <string name="hint_password_confirm">Confirmar contraseña</string>
+    <string name="hint_name">Nombres</string>
+    <string name="hint_lastname">Apellidos</string>
+    <string name="hint_adress">Dirección</string>
+    <string name="hint_phone">Telefono</string>
+    <string name="hint_mail">E-mail</string>
+    <string name="text_button_create_account">Únete</string>
 </resources>
