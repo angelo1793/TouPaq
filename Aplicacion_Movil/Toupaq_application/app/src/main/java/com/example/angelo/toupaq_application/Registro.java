@@ -5,31 +5,26 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
 
 /**
  * Created by r_jeq on 20/10/2017.
  */
 
-public class Registro extends AppCompatActivity implements View.OnClickListener {
-    Button btnregis;
-    @Override
+public class Registro extends AppCompatActivity  {
 
-    public void onCreate(Bundle saveInstanceState) {
-        super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_registro);
+@Override
+    protected void  onCreate(Bundle saveInstanceState){
 
-        btnregis = (Button) findViewById(R.id.btconfirmar);
-                btnregis.setOnClickListener(this);
-    }
+    super.onCreate(saveInstanceState);
+    setContentView(R.layout.activity_registro);
 
 
-    @Override
-    public void onClick(View v) {
-        int btn = v.getId();
-        Intent intentLog= new Intent(this,Login.class);
+}
 
-        startActivity(intentLog);
-    }
+
+
+
 
 }
 

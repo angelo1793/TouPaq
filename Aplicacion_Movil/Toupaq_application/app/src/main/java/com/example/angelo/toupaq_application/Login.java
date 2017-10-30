@@ -14,6 +14,7 @@ public class Login extends AppCompatActivity implements  View.OnClickListener {
     Button btningresar;
 
 
+
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
@@ -41,8 +42,9 @@ public class Login extends AppCompatActivity implements  View.OnClickListener {
         }
     }
 
-    public  void  goCreateAccount(View view){
-
+    public  void  goCreateAccount(View vi){
+        Intent intentRe = new Intent(this,Registro.class);
+        startActivity(intentRe);
     }
 }
 
