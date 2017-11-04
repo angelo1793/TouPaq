@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
     ImageButton btnpaquete, btndestino,btnestadisticas;
 
     @Override
@@ -32,9 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intentD);break;
         case R.id.btn_estadistica:
             Toast.makeText(this, "Boton Estadistica", Toast.LENGTH_SHORT).show();break;
-        case R.id.btn_paquete:
-          startActivity(intentP);break;
+        case R.id.btn_paquete: {
+            startActivity(intentP);
+            btnpaquete.setImageResource(R.drawable.icon_boletos2.png);
+            break;
+        }
     }
+
 
     }
 }

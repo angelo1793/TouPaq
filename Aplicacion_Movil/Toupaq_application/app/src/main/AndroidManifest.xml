@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.angelo.toupaq_application">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,9 +22,12 @@
         <activity android:name=".Detalle_paquetes"></activity>
         <activity android:name=".confirmar_reserva"></activity>
         <activity android:name=".Login"></activity>
-        <activity android:name=".Registro"></activity>
         <activity android:name=".Detares"></activity>
-        <activity android:name=".Mensaje_reserva"></activity>
-    </application>
+        <activity android:name=".fotos"></activity>
+        <activity android:name=".Mensaje_reserva"/>
+        <activity android:name=".Registro"/>
+
+
+      </application>
 
 </manifest>
